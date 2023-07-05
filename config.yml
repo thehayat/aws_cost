@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    admin:
+      email: admin@gmail.com
+      name: Admin
+      password: $2b$12$n1tg4J0T9tV77G7yl2Gw3OByhxHKPQlaf3eMBRnZCxjaGtL5UN7Tm # To be replaced with hashed password
+    test:
+      email: test@gmail.com
+      name: Test
+      password: $2b$12$vrz6DwpJB7pLUeEMEbGNBuWubOmMgChjRz59C0ExURz7d0JQqbWFe # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: aws_syngenta # Must be string
+  name: aws_cost
+preauthorized:
+  emails:
+    - melsby@gmail.com
