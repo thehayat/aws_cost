@@ -16,9 +16,7 @@ def read_data(filename=""):
     if filename:
         return pd.read_csv('sample.csv')
 
-    session = boto3.Session(profile_name='CONNECT-DEV')
-    print(session)
-    s3_client = session.client(service_name="s3")
+    s3_client = boto3.client("s3")
     # Iterates through all the objects, doing the pagination for you. Each obj
     # is an ObjectSummary, so it doesn't contain the body. You'll need to call
     # get to get the whole body.
